@@ -21,6 +21,15 @@ export class AppMenu {
     ngOnInit() {
         this.model = [
             {
+                label: 'Zona de Juegos',
+                items: [
+                    { label: 'Hilde Zone', icon: 'pi pi-fw pi-truck', routerLink: ['/uikit/hildeGameZone'] },
+                    { label: 'Yael Zone', icon: 'pi pi-fw pi-truck', routerLink: ['/uikit/yaelGameZone'] },
+                    { label: 'Elian Zone', icon: 'pi pi-fw pi-truck', routerLink: ['/uikit/elianGameZone'] },
+                    { label: 'Carlos Zone', icon: 'pi pi-fw pi-truck', routerLink: ['/uikit/carlosGameZone'] },
+                ]
+            },
+            {
                 label: 'Home',
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
             },
