@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 @Component({
-  selector: 'app-banner',
+  selector: 'app-Promo-Banner',
   imports: [CardModule],
-  templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss'
+  templateUrl: './promoBanner.component.html',
+  styleUrl: './promoBanner.component.scss'
 })
-export class BannerComponent {
+export class promoBannerComponent {
  
   @Input() percentage: string = '';
   @Input() description: string = '';
