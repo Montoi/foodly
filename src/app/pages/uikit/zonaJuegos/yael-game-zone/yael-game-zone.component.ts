@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { promoBannerComponent } from '../../moleculas/banner/PromoBanner.component';
+import { promoBannerComponent } from '../../moleculas/banner/promoBanner.component';
+
 
 
 
