@@ -1,0 +1,78 @@
+<p-card
+  class="banner-card"
+  [style]="{
+    'background-image': 'url(' + backgroundUrl + ')',
+    'width': bannerW,
+    'height': bannerH,
+    'max-width': '100%',
+    'overflow': 'hidden',
+    'border-radius': '90px',
+    'background-size': 'cover',
+    'background-position': 'center center'
+  }"
+>
+
+  <div class="flex flex-row items-center gap-8 p-0">
+    <!-- Texto optimizado -->
+    <div
+      class="text-content font "
+      [style]="{
+        'white-space': 'nowrap',
+        'max-width': maxW,
+        
+        'padding-bottom': '30px',
+        'padding-top': '0px'
+      }"
+    >
+      <h1
+        [style]="{
+          'font-weight': '900',
+          'line-height': '0.8',
+          'margin': '0',
+          'padding-left': '35px',
+          'color': 'white',
+          'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.3)',
+          'font-size': percentageSize
+        }"
+      >
+        {{ percentage }}%
+      </h1>
+      <h2
+        class="main-text"
+        [style]="{
+          'font-weight': '800',
+          'margin': '8px 0 4px 0',
+          'letter-spacing': '1px',
+          'color': 'white',
+          'text-shadow': '1px 1px 2px rgba(0, 0, 0, 0.3)',
+          'font-size': subtextSize
+        }"
+      >
+        {{ subtext }}
+      </h2>
+      <h2
+        class="sub-text"
+        [style]="{
+          'font-weight': '1000',
+          'margin': '0',
+          'letter-spacing': '1px',
+          'color': 'white',
+          'text-shadow': '1px 1px 2px rgba(0, 0, 0, 0.3)',
+          'font-size': descriptionSize
+        }"
+      >
+        {{ description }}
+      </h2>
+    </div>
+
+    <!-- Imagen -->
+    <div class="flex-shrink-0">
+      <img
+        [src]="imageUrl"
+        alt="Banner Image"
+        class="banner-image"
+        style="display: block;"
+      />
+    </div>
+  </div>
+</p-card>
