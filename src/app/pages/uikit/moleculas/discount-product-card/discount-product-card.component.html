@@ -1,0 +1,26 @@
+<p-card class="max-w-[250px] min-h-[400px] flex flex-col items-center">
+    <div class="img-container">
+        <div class="promo" [hidden]="!isPromo">
+            <span>PROMO</span>
+        </div>
+        <img [src]="imageUrl" alt="" class="img" />
+    </div>
+    <div class="text-container">
+        <div class="title">
+            <h5>{{title}}</h5>
+        </div>
+        <div class="details">
+            <span>{{distance + "km"}}</span>
+            <span>|</span>
+            <span class="pi pi-star-fill" style="font-size: 12px; color: #fa9e12"></span>
+            <span>{{rating + ""}} ({{ratingDetails + 'k'}})</span>
+        </div>
+        <div class="price">
+            <span>{{"$" + price}}</span>
+            <span>|</span>
+            <span class="pi pi-truck" style="font-size: 12px; color: #16ab49"></span>
+            <span>{{"$" + shipping}}</span>
+            <p-button icon="pi pi-heart" [rounded]="true" [text]="true" severity="danger" size="large"/>
+        </div>
+    </div>
+</p-card>
