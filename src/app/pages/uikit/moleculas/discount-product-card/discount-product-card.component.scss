@@ -1,0 +1,47 @@
+.img-container {
+    position: relative;
+
+    .promo {
+        border-radius: 8px;
+        position: absolute;
+        padding: 5px;
+        margin: 14px;
+        background-color: #16AB49;
+        color: white;
+        font-size: smaller;
+    }
+
+    .img {
+        border-radius: 22px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        font-size: small;
+        gap: 8px;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        :first-child {
+            font-size: 20px;
+            font-weight: bold;
+            color: #16AB49;
+        }
+    }
+}
