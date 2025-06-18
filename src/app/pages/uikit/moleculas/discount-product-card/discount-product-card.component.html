@@ -16,10 +16,10 @@
             <span>{{rating + ""}} ({{ratingDetails + 'k'}})</span>
         </div>
         <div class="price">
-            <span>{{"$" + price}}</span>
+            <span>{{price | currency}}</span>
             <span>|</span>
             <span class="pi pi-truck" style="font-size: 12px; color: #16ab49"></span>
-            <span>{{"$" + shipping}}</span>
+            <span>{{shipping | currency}}</span>
             <p-button icon="pi pi-heart" [rounded]="true" [text]="true" severity="danger" size="large"/>
         </div>
     </div>
