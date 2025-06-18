@@ -1,23 +1,32 @@
-<p-card class="max-w-[250px] min-h-[400px] flex flex-col items-center">
-    <div class="img-container">
-        <img [src]="imageUrl" alt="" class="img" />
+<p-card >
+
+    <div class="base-container">
+        <div class="img-container">
+            <img [src]="imageUrl" alt="" class="img" />
+
+        </div>
+        <div class="text-container">
+            <div class="title">
+                <h5>{{title}}</h5>
+            </div>
+
+            <div class="details">
+                <span>{{itemCount + " " + "items"}}</span>
+                <span>|</span>
+
+                <span>{{distance + "km"}}</span>
+            </div>
+            <div class="price">
+                <span>{{price | currency}}</span>
+                <span></span>
+                <p-button label="Cancelled" variant="outlined" severity="danger" />
+
+            </div>
+        </div>
+
     </div>
-    <div class="text-container">
-        <div class="title">
-            <h5>{{title}}</h5>
-        </div>
-        <div class="details">
-            <span>{{itemCount + "items"}}</span>
-            <span>|</span>
-            
-            <span>{{distance + "km"}}</span>
-        </div>
-        <div class="price">
-            <span>{{price | currency}}</span>
-            <span>|</span>
-            <span class="pi pi-truck" style="font-size: 12px; color: #16ab49"></span>
-            <p-button label="Danger" variant="outlined" severity="danger" />
-           
-        </div>
-    </div>
+
+
+
+
 </p-card>
