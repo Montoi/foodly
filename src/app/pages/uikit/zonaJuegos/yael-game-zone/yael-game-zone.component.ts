@@ -3,7 +3,6 @@ import { promoBannerComponent } from '../../moleculas/banner/promoBanner.compone
 
 
 
-
 @Component({
   selector: 'app-yael-game-zone',
   imports: [promoBannerComponent],

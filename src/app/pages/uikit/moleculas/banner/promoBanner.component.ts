@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CardModule } from 'primeng/card';
 @Component({
   selector: 'app-Promo-Banner',
-  imports: [CardModule],
+  imports: [CardModule, CommonModule],
   templateUrl: './promoBanner.component.html',
   styleUrl: './promoBanner.component.scss'
 })
