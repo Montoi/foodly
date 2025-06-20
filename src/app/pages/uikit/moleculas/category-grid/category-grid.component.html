@@ -1,0 +1,7 @@
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 justify-items-center w-full bg-white p-[20px]">
+    <div class="content flex flex-col items-center w-32 cursor-pointer"
+    *ngFor="let item of categories">
+        <img class="emoij w-[100px] h-[100px] mb-2" [src]="item.iconUrl"alt="" />
+        <span class="truncate w-14 md:w-20 lg:w-24 text-center font-extrabold ">{{item.label}}</span>
+    </div>
+</div>

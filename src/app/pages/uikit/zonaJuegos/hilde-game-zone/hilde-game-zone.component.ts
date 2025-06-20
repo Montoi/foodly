@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DiscountProductCardComponent } from '../../moleculas/discount-product-card/discount-product-card.component';
 import { ProductCarouselComponent } from '../../moleculas/product-carousel/product-carousel.component';
+import { CategoryGridComponent } from '../../moleculas/category-grid/category-grid.component';
 
 @Component({
     selector: 'app-hilde-game-zone',
-    imports: [DiscountProductCardComponent, ProductCarouselComponent],
+    imports: [DiscountProductCardComponent, ProductCarouselComponent, CategoryGridComponent],
     templateUrl: './hilde-game-zone.component.html',
     styleUrl: './hilde-game-zone.component.scss'
 })
@@ -111,8 +112,18 @@ export class HildeGameZoneComponent implements OnInit {
             isPromo: false
         }
     ];
-    
+    categories: any[] = [
+        { iconUrl: 'https://www.svgrepo.com/show/434100/hamburger.svg', label: 'Hamburger' },
+        { iconUrl: 'https://www.svgrepo.com/show/398088/pizza.svg', label: 'Pizza' },
+        { iconUrl: 'https://www.svgrepo.com/show/6178/noodles.svg', label: 'Noodles' },
+        { iconUrl: 'https://www.svgrepo.com/show/397426/meat-on-bone.svg', label: 'Meat' },
+        { iconUrl: 'https://www.svgrepo.com/show/356688/tomato.svg', label: 'Vegetables' },
+        { iconUrl: 'https://www.svgrepo.com/show/407185/pie.svg', label: 'Dessert' },
+        { iconUrl: 'https://www.svgrepo.com/show/395869/beer-mug.svg', label: 'Drink' },
+        { iconUrl: 'https://www.svgrepo.com/show/398108/popcorn.svg', label: 'More' }
+    ];
     ngOnInit(): void {
-        console.log("productos:", this.products)
+        console.log('productos:', this.products);
+        console.log('categorias', this.categories)
     }
 }
