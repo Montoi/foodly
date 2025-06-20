@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    width: 100%;
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 0 15px 10px;
+        .title {
+            font-size:large;
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+}
