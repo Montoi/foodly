@@ -10,6 +10,10 @@ import { ButtonModule } from 'primeng/button';
     styleUrl: './discount-product-card.component.scss'
 })
 export class DiscountProductCardComponent implements OnInit {
+    ngOnInit(): void {
+       
+    }
+
     @Input() imageUrl: string = '';
     @Input() title: string = '';
     @Input() distance: string = '';
@@ -20,8 +24,4 @@ export class DiscountProductCardComponent implements OnInit {
     @Input() shipping: string = '';
     @Input() isPromo: boolean = false;
     @Input() isFavorite: boolean = false;
-
-    ngOnInit(): void {
-        throw new Error('Method not implemented.');
-    }
 }
