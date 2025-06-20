@@ -1,0 +1,23 @@
+<p-card class="banner-card no-padding-card">
+  <div
+    class="content-wrapper"
+    [ngStyle]="{
+      'background-image': 'url(' + backgroundUrl + ')',
+      'background-size': 'cover',
+      'background-position': 'center',
+      'border-radius': '90px'
+    }"
+  >
+    <!-- Texto -->
+    <div class="text-content font" [style.color]="textColor">
+      <h1 class="percentage-text">{{ percentage }}%</h1>
+      <h2 class="main-text">{{ subtext }}</h2>
+      <h2 class="sub-text">{{ description }}</h2>
+    </div>
+
+    <!-- Imagen -->
+    <div class="image-container">
+      <img [src]="imageUrl" alt="Banner Image" class="banner-image" />
+    </div>
+  </div>
+</p-card>

@@ -1,0 +1,176 @@
+/* Elimina padding y fondo de p-card */
+::ng-deep .no-padding-card .p-card-body {
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.banner-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  min-height: 200px;
+  border-radius: 90px;
+  width: 500px;
+}
+
+/* ... (resto de estilos como porcentaje-text, imagen, media queries, etc.) ... */
+
+
+/* TEXTOS */
+.font {
+  font-family: 'Fredoka One', cursive;
+}
+
+.text-content {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.percentage-text {
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 0.8;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgb(247, 247, 247);
+}
+
+.main-text {
+  font-size: 2rem;
+  margin: 8px 0 4px 0;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+.sub-text {
+  font-size: 1.6rem;
+  margin: 0;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+/* IMAGEN */
+.image-container {
+  flex-shrink: 0;
+  max-width: 220px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .content-wrapper {
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .percentage-text {
+    font-size:90px;
+  }
+
+  .main-text {
+    font-size: 30px;
+  }
+
+  .sub-text {
+    font-size: 20px;
+  }
+
+  .image-container {
+    max-width: 200px;
+  }
+
+  .text-content {
+    white-space: normal;
+  }
+
+  .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 30px;
+  min-height: 200px;
+  border-radius: 90px;
+  width: 500px;
+}
+
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .percentage-text {
+    font-size: 3rem;
+  }
+
+  .main-text {
+    font-size: 1.2rem;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+
+    
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 30px;
+  min-height: 200px;
+  border-radius: 90px;
+  width: 400px;
+
+    .percentage-text {
+    font-size: 70px;
+  }
+
+  .main-text {
+    font-size: 20px;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    max-width: 180px;
+  }
+  
+  .text-content {
+    white-space: normal;
+  }
+
+}
+
+
+
+    
+
+}

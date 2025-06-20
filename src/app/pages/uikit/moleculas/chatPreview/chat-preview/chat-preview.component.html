@@ -1,0 +1,17 @@
+<div class="flex items-center justify-between px-4 py-3 hover:bg-gray-100 rounded-xl cursor-pointer">
+  <!-- Parte izquierda: avatar + texto -->
+  <div class="flex items-center gap-4">
+    <p-avatar [image]="avatarUrl" class="mr-2" size="large" shape="circle" />
+    <div class="flex flex-col">
+      <span class="text-gray-900 font-semibold text-sm">{{username}}</span>
+      <span class="text-gray-500 text-sm truncate">{{lastMessage}}</span>
+
+    </div>
+  </div>
+
+  <!-- Parte derecha: hora + burbuja -->
+  <div class="flex flex-col items-end gap-1">
+    <p-badge [value]="unreadCount" severity="success" />
+    <span class="text-xs text-gray-400">{{time}}</span>
+  </div>
+</div>

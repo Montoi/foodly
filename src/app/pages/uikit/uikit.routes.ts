@@ -14,6 +14,10 @@ import { TableDemo } from './tabledemo';
 import { OverlayDemo } from './overlaydemo';
 import { TreeDemo } from './treedemo';
 import { MenuDemo } from './menudemo';
+import { HildeGameZoneComponent } from './zonaJuegos/hilde-game-zone/hilde-game-zone.component';
+import { CarlosGameZoneComponent } from './zonaJuegos/carlos-game-zone/carlos-game-zone.component';
+import { YaelGameZoneComponent } from './zonaJuegos/yael-game-zone/yael-game-zone.component';
+import { ElianGameZoneComponent } from './zonaJuegos/elian-game-zone/elian-game-zone.component';
 
 export default [
     { path: 'button', data: { breadcrumb: 'Button' }, component: ButtonDemo },
@@ -30,6 +34,10 @@ export default [
     { path: 'table', data: { breadcrumb: 'Table' }, component: TableDemo },
     { path: 'overlay', data: { breadcrumb: 'Overlay' }, component: OverlayDemo },
     { path: 'tree', data: { breadcrumb: 'Tree' }, component: TreeDemo },
+    { path: 'hildeGameZone', data: { breadcrumb: 'hildeGameZone' }, component: HildeGameZoneComponent },
+    { path: 'carlosGameZone', data: { breadcrumb: 'carlosGameZone' }, component: CarlosGameZoneComponent },
+    { path: 'yaelGameZone', data: { breadcrumb: 'yaelGameZone' }, component: YaelGameZoneComponent },
+    { path: 'elianGameZone', data: { breadcrumb: 'elianGameZone' }, component: ElianGameZoneComponent },
     { path: 'menu', data: { breadcrumb: 'Menu' }, component: MenuDemo },
     { path: '**', redirectTo: '/notfound' }
 ] as Routes;
