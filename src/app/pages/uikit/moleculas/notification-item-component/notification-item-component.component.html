@@ -1,0 +1,21 @@
+<div class="notification-wrapper">
+  <div class="container">
+    <div class="icon" [ngStyle]="{ backgroundColor: iconColor }">
+      {{ icon }}
+    </div>
+
+    <div class="container1">
+      <div class="title-row">
+        <h1 class="text">{{ title }}</h1>
+        <span class="new-badge" *ngIf="isNew">New</span>
+      </div>
+      <p class="date">{{ date }} | {{ time }}</p>
+    </div>
+   
+  </div>
+
+   <div class="cont"> 
+              <p class="message">{{ message }}</p>
+
+    </div>
+</div>
