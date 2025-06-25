@@ -1,0 +1,32 @@
+<p-card >
+
+    <div class="base-container">
+        <div class="img-container">
+            <img [src]="imageUrl" alt="" class="img" />
+
+        </div>
+        <div class="text-container">
+            <div class="title">
+                <h5>{{title}}</h5>
+            </div>
+
+            <div class="details">
+                <span>{{itemCount + " " + "items"}}</span>
+                <span>|</span>
+
+                <span>{{distance + "km"}}</span>
+            </div>
+            <div class="price">
+                <span>{{price | currency}}</span>
+                <span></span>
+                <p-button label="Cancelled" variant="outlined" severity="danger" />
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</p-card>

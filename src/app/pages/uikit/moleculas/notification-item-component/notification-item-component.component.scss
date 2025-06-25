@@ -1,0 +1,421 @@
+.notification-wrapper {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 8000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+/* Tarjeta individual */
+.container {
+  display: flex;
+  align-items: flex-start; // <-- Esto asegura que el texto y el ícono estén alineados arriba
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  
+}
+
+/* Ícono */
+.icon {
+  width: 50px;
+  height: 50px;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor de texto */
+.container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+/* Línea título + badge */
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Título */
+.text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Badge New */
+.new-badge {
+  background-color: #4caf50;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+/* Fecha */
+.date {
+  font-size: 20px;
+  color: #888;
+  margin-top: 0.4rem;
+  letter-spacing: 2px;
+  
+}
+
+/* Mensaje */
+.message {
+  font-size: 25px;
+  color: #000000;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+ 
+.cont{
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container1 {
+
+  margin-left: 10px;
+}
+
+.text {
+  font-size: 30px;
+  letter-spacing: 0px;
+}
+
+/* Badge New */
+.new-badge {
+  background-color: #4caf50;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+/* Fecha */
+.date {
+  font-size: 20px;
+  color: #888;
+  margin-top: 0.4rem;
+  letter-spacing: 2px;
+  
+}
+
+}
+
+
+
+
+@media (max-width: 550px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container1 {
+
+  margin-left: 0px;
+}
+
+.text {
+  font-size: 1.9rem;
+  letter-spacing: 0px;
+}
+
+/* Badge New */
+.new-badge {
+  background-color: #4caf50;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+/* Fecha */
+.date {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 0.4rem;
+  letter-spacing: 2px;
+  
+}
+
+}
+
+
+@media (max-width: 498px) {
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.container1 {
+
+  margin-left: 1px;
+}
+
+.text {
+  font-size: 1.6rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 15px;
+  border-radius: 10px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.4rem;
+  letter-spacing: 2px;
+  
+}
+
+.message {
+  font-size: 20px;
+}
+
+}
+
+
+@media (max-width: 445px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container1 {
+
+  margin-left: 0px;
+}
+
+.text {
+  font-size: 1.3rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 15px;
+  border-radius: 10px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 0.7rem;
+
+  
+}
+
+.message {
+  font-size: 20px;
+}
+
+}
+
+
+@media (max-width: 420px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container1 {
+
+  margin-left: 0px;
+}
+
+.text {
+  font-size: 1.3rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 10px;
+  border-radius: 5px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 0.7rem;
+
+  
+}
+
+.message {
+  font-size: 20px;
+}
+
+}
+
+
+@media (max-width: 408px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.container1 {
+
+  margin-left: 0px;
+}
+
+.text {
+  font-size: 1.1rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 10px;
+  border-radius: 5px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 0.6rem;
+
+  
+}
+
+.message {
+  font-size: 20px;
+}
+
+}
+
+
+@media (max-width: 390px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.text {
+  font-size: 1.1rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 6px;
+  border-radius: 5px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 0.6rem;
+
+  
+}
+
+.message {
+  font-size: 10px;
+}
+
+}
+
+
+
+@media (max-width: 378px) {
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.text {
+  font-size: 0.9rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 4px;
+  border-radius: 5px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 0.4rem;
+
+  
+}
+
+.message {
+  font-size: 10px;
+}
+
+}
+
+
+@media (max-width: 353px) {
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.text {
+  font-size: 0.9rem;
+}
+
+/* Badge New */
+.new-badge {
+  font-size: 4px;
+  border-radius: 5px;
+
+}
+
+/* Fecha */
+.date {
+  font-size: 0.4rem;
+
+  
+}
+
+.message {
+  font-size: 10px;
+}
+
+}
