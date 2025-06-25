@@ -13,6 +13,8 @@ export class FilterChipComponent {
   @Input() label!: string;
   @Input() icon?: string;
   @Input() isSelected: boolean = false;
+  @Input() scrollable: boolean = false;
+
 
   @Output() onSelect = new EventEmitter<string>();
 

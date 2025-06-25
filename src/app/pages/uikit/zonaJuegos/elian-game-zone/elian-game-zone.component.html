@@ -15,7 +15,7 @@
 <div class="section-header">
   <h2>Recent Searches</h2>
 </div>
-<div class="chips-row scrollable-row">
+<div class="chips-row no-scroll">
   <app-filter-chip 
     *ngFor="let chip of recentChips" 
     [label]="chip.label"
@@ -28,7 +28,7 @@
 <div class="section-header">
   <h2>Popular Cuisines</h2>
 </div>
-<div class="chips-row scrollable-row">
+<div class="chips-row no-scroll">
   <app-filter-chip 
     *ngFor="let chip of popularChips" 
     [label]="chip.label"
