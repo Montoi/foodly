@@ -1,0 +1,36 @@
+<div class="header-container">
+  <!-- Avatar -->
+  <p-avatar [image]="avatarUrl" shape="circle" size="large"></p-avatar>
+
+  <!-- Ubicación -->
+  <div class="location-info">
+    <span class="location-label"> {{state}}</span>
+    <span class="location-name">
+      <strong>{{ location }}</strong>
+      <i  class="pi pi-chevron-down location-icon" onclick="onLocationIconClick()"></i>
+    </span>
+  </div>
+
+  <!-- Notificación -->
+  <div class="icon-buttons " onclick="onNotificationIconClick()">
+    <button class="icon-wrapper hover:bg-gray-300 transition-all rounded-lg ">
+      <i class="pi pi-bell"></i>
+      <span class="badge-dot" *ngIf="hasNotification"></span>
+    </button>
+
+    <button class="icon-wrapper hover:bg-gray-300 transition-all rounded-lg  " onclick="onCalendarIconClick()">
+      <i class="pi pi-shopping-bag " ></i>
+      <span class="badge-dot" *ngIf="hasCartItems"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Search input -->
+<div class="search-wrapper " *ngIf="textInputVisible">
+  <i class="pi pi-search search-icon"></i>
+  <input
+    type="text"
+    placeholder="What are you craving?"
+    class="search-input"
+  />
+</div>

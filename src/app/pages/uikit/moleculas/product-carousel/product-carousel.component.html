@@ -1,0 +1,20 @@
+<div class="carousel">
+    <header class="header">
+        <h1 class="title">{{sectionTitle}}</h1>
+        <p-button label="See All" variant="text" />
+    </header>
+    <div class="body">
+        <app-discount-product-card
+            *ngFor="let product of products"
+            [imageUrl]="product.imageUrl"
+            [title]="product.title"
+            [distance]="product.distance"
+            [rating]="product.rating"
+            [ratingDetails]="product.ratingDetails"
+            [price]="product.price"
+            [shipping]="product.shipping"
+            [isPromo]="product.isPromo"
+        >
+        </app-discount-product-card>
+    </div>
+</div>

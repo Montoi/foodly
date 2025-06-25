@@ -1,0 +1,16 @@
+
+
+<div
+  class="filter-chip"
+  [class.selected]="isSelected"
+  (click)="handleClick()"
+  title="{{ label }}"
+>
+
+    <span *ngIf="icon" class="icon">{{ icon }}</span>
+    <span class="label">{{ label }}</span>
+
+
+</div>
+
+
