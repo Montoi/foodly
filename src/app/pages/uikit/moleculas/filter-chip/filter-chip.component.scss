@@ -1,0 +1,45 @@
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  border: 2px solid #28a745; 
+  background-color: white;
+  color: #28a745; 
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-chip .icon {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #28a745; 
+  display: flex;
+  align-items: center;
+}
+
+.filter-chip.selected {
+  background-color: #28a745;
+  color: white;             
+  border-color: #28a745;
+}
+
+.filter-chip.selected .icon {
+  color: white; 
+}
+
+.filter-chip.scrollable {
+  margin-right: 12px;
+  min-width: 90px;
+  white-space: nowrap;
+}
+
+
+

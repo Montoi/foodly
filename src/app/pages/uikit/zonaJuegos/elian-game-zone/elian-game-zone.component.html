@@ -1,7 +1,49 @@
+<div class="section-header">
+  <h2>Recommended For You 😍</h2>
+  <a class="see-all">See All</a>
+</div>
+<div class="chips-row scrollable-row">
+  <app-filter-chip 
+    *ngFor="let chip of recommendedChips" 
+    [label]="chip.label"
+    [icon]="chip.icon"
+    [isSelected]="chip.label === selectedLabel"
+    (onSelect)="onChipSelect($event)">
+  </app-filter-chip>
+</div>
+
+<div class="section-header">
+  <h2>Recent Searches</h2>
+</div>
+<div class="chips-row no-scroll">
+  <app-filter-chip 
+    *ngFor="let chip of recentChips" 
+    [label]="chip.label"
+    [icon]="chip.icon"
+    [isSelected]="chip.label === selectedLabel"
+    (onSelect)="onChipSelect($event)">
+  </app-filter-chip>
+</div>
+
+<div class="section-header">
+  <h2>Popular Cuisines</h2>
+</div>
+<div class="chips-row no-scroll">
+  <app-filter-chip 
+    *ngFor="let chip of popularChips" 
+    [label]="chip.label"
+    [icon]="chip.icon"
+    [isSelected]="chip.label === selectedLabel"
+    (onSelect)="onChipSelect($event)">
+  </app-filter-chip>
+</div>
+
+
+<!-- 
 <app-order
     [imageUrl]="'https://www.bmc.org/sites/default/files/sonny-mauricio-yhc4pSbl01A-unsplash.jpg'"
     [title]="'Bite Me sandwiches'"
     [itemCount]="3"
     [distance]="1.4"
     [price]="32"
-  ></app-order>
+  ></app-order> -->
