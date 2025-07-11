@@ -1,43 +1,20 @@
 
+<app-Promo-Banner
+    [percentage]="'20'",
+    [description]="'Como tan muchacho?'",
+    [subtext]="'Yo lo veo a ustedes muy bien...'",
+    [imageUrl]="'image-removebg-preview.png'",
+    [backgroundUrl]="'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKQArwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAUH/8QAGxABAQEBAQEBAQAAAAAAAAAAAAECEhEhMUH/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARESAv/aAAwDAQACEQMRAD8A+Zj4MjPm6+SHgyD4PiaF8Hw3gyGhPB8P43KaE8Hw/I8pon43inLcmifjeK8tyaJeN4ryHJon4HivIcmifgeK8h4uifgeKeBYugSD4bwZlnQkhpk8yaZTQnP0efqnJplNE5kZlSZNyz0JcjwrMm4ToQ4GZW4Hg6EOW4X4bhOkQ5C4dHDcHSufkOXRwHK9Dn5a5dFyS5XoQ5Lcujn4FyuiMyaZNIeZLQsyaZPMnmWL6E5k0ypMnmWb6ROZGYWmRmGb6E5gePq0wMwz0I8DwvwPCdCEw3DomG4Toc1w3DouG4Xoc1wW4dVwXj4vQ5uPhbh03Bbhroc9yW5dFyW5anocsh5GkPItqtMnmRzDyfWLUCZPMmkPMsWhZk8yaZPMsWoSZNMqTJpljROYNwpMm5ToR4GZW5blOhC4Dhflrlehz3IXK/Jblehz3Jbl0XJLlqUc9yS5dFySxuVXBmKZhMqZdaGkUzC5PGKHkUzPhMqRyqGkPIWKZ/GaDIaRoaMUaQ8jQzOheRkFk0L4Fhwq6J2FsVpasErCWK0lbglYnqK6JfxuDy8qZSzTyvRVWzVMo5p81iwXzTxGVTN+OdiLZp5UZTysWC0ppUZTzTNgrKaVKaN0zgp6PqfTdJgf0LSdB0YHtJaF0S6akDWktC0trcgGqS34Nqer9bkHlynlQlPK9VjS+apNOeaPNMWI6Jo8055o80xYOiaPNOaaPNMXyOiaNNOeaPNs8o6JoenP0Pacjo6bpCbbtORboLpG7bteRXr4W6Tuy9LyK3RLpO6LdNTyp7ol0S6LdNyDzZTSpyjK9VirSnlRlNKxYLTRppGU8rNiLTRppCU0rOC/X0ZpGU3v1nBboekfRlTBXoZtH1vTkVum6S9C0wUuvoXSfoWrgpdFuie/AtawG6C6JaFqyDih4SHjupoMCGn6zQ0MWHjIMGBDT9ZqDDQsMyCzCDMzIAwgoDVmoFpf4alqhaFGg1Fc0NE4eV1DQ0LKMrNFIaJymlZDw0/Se/RlZQ8MT0fUDiT0ZUDCT1vQMAet6AtS2haoNJWtD1cG/gULQ9aiuSHgM6hjRmZDQYzMhoLMgMFmQGCzIMLMIDMwoUGZQArMoH8Jf0WUf//Z'",
+    [textColor]="'white'"
 
+>
+</app-Promo-Banner>
 
-
-<app-header-compact-component
- location="Times Square"
- [state]="'Deliver to'" 
- [avatarUrl]="'https://randomuser.me/api/portraits/men/32.jpg'"
- [hasNotification]="true"
- [hasCartItems]="false"
- [textInputVisible]= "true"
- 
- >
-
-</app-header-compact-component>
-
-
-
-
-<!--        
-       
-       <app-notification-item-component
-  [title]="'Order Cancelled!'"
-  [message]="'You canceled your order at Burger Hut. We apologize.'"
-  [date]="'2024-06-20'"
-  [time]="'8:45 PM'"
-  [type]="'error'"
-  [isNew]="true"
-></app-notification-item-component>
-
-       
-       
-        -->
-       
-       
-       
-       <!-- <app-Promo-Banner
-        [backgroundUrl]="'https://media.istockphoto.com/id/1523130039/es/foto/textura-r%C3%BAstica-verde-textura-de-alta-calidad-en-resoluci%C3%B3n-extremadamente-alta-material.jpg?s=612x612&w=0&k=20&c=Y66VjO0oKhIZNkd9DXloz-lbcf8b8KCJzzLpLhRwsTE='"
-        [imageUrl]="'https://png.pngtree.com/png-vector/20231016/ourmid/pngtree-burger-food-png-free-download-png-image_10199386.png'"
-        [percentage]="'40'"
-        [subtext]="'Discount only'"
-        [description]="'VALID FOR TODAY!'"
-        ></app-Promo-Banner> -->
+<app-category-grid
+    [categories]="categories"
+></app-category-grid>
+<app-product-carousel
+    [sectionTitle]="'Discount Guaranteed'"
+    [products]="products"
+> 
+</app-product-carousel>
