@@ -1,22 +1,79 @@
-
-  <div
-    class="content-wrapper"
-    [ngStyle]="{
-      'background-image': 'url(' + backgroundUrl + ')',
-      'background-size': 'cover',
-      'background-position': 'center',
-      'border-radius': '90px'
-    }"
-  >
-    <!-- Texto -->
-    <div class="text-content font" [style.color]="textColor">
-      <h1 class="percentage-text">{{ percentage }}%</h1>
-      <h2 class="main-text">{{ subtext }}</h2>
-      <h2 class="sub-text">{{ description }}</h2>
-    </div>
-
-    <!-- Imagen -->
-    <div class="image-container">
-      <img [src]="imageUrl" alt="Banner Image" class="banner-image" />
-    </div>
+<!-- Template HTML optimizado -->
+<div
+  class="
+    w-full max-w-none
+    flex flex-row items-center justify-between
+    p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16
+    gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16
+    min-h-[200px] sm:min-h-[240px] md:min-h-[280px] lg:min-h-[320px] xl:min-h-[360px]
+    rounded-[30px] sm:rounded-[45px] md:rounded-[60px] lg:rounded-[75px] xl:rounded-[90px]
+    bg-cover bg-center
+    shadow-lg
+    overflow-hidden
+    mx- sm:mx-4 md:mx-6 lg:mx-8 xl:mx-12
+  "
+  [ngStyle]="{
+    'background-image': 'url(' + backgroundUrl + ')'
+  }"
+>
+  <!-- Texto -->
+  <div class="
+    flex-1
+    whitespace-normal sm:whitespace-nowrap
+    font-['Fredoka_One',_cursive]
+  " 
+  [style.color]="textColor">
+    <h1 class="
+      font-semibold
+      text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
+      leading-[0.8]
+      m-0
+      drop-shadow-lg
+    ">
+      {{ percentage }}%
+    </h1>
+    <h2 class="
+      text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+      my-1 sm:my-2
+      tracking-wide
+      drop-shadow-md
+    ">
+      {{ subtext }}
+    </h2>
+    <h2 class="
+      text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+      m-0
+      tracking-normal
+      drop-shadow-md
+    ">
+      {{ description }}
+    </h2>
   </div>
+
+  <!-- Imagen -->
+  <div class="
+    flex-shrink-0
+    w-[120px] sm:w-[140px] md:w-[180px] lg:w-[220px] xl:w-[260px]
+    h-[120px] sm:h-[140px] md:h-[180px] lg:h-[220px] xl:h-[260px]
+    flex items-center justify-center
+    overflow-hidden
+  ">
+    <img 
+      [src]="imageUrl" 
+      alt="Banner Image" 
+      class="w-full h-full object-contain"
+    />
+  </div>
+</div>
+
+<!-- Estilos globales que debes agregar en tu global styles o en el componente -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  
+  /* Solo necesitamos esto para PrimeNG si usas p-card */
+  ::ng-deep .no-padding-card .p-card-body {
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+</style>

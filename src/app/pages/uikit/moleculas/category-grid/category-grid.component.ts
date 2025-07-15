@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, output, Output } from '@angular/core';
 
 @Component({
   selector: 'app-category-grid',
@@ -10,9 +10,19 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CategoryGridComponent implements OnInit {
   @Input() categories: any[] = [
     {iconUrl: '', label: ''}
+    
   ]
+
+  @Output() categorySelected = new EventEmitter<string>();
+ 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
+  }
+
+
+
+  onCategoryClick(label: string): void {
+    this.categorySelected.emit(label);
   }
 
 }

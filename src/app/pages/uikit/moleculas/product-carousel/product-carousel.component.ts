@@ -14,6 +14,7 @@ export class ProductCarouselComponent implements OnInit {
 
     @Input() sectionTitle: string = '';
     @Input() products: any[] = [];
+
     ngOnInit(): void {
         
     }
