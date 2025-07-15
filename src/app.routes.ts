@@ -4,13 +4,16 @@ import { Dashboard } from './app/pages/dashboard/dashboard';
 import { Documentation } from './app/pages/documentation/documentation';
 import { Landing } from './app/pages/landing/landing';
 import { Notfound } from './app/pages/notfound/notfound';
-
+import { AllCategoriesComponent } from './app/pages/uikit/zonaJuegos/all-categories/all-categories.component';
+import { FoodListComponent } from './app/pages/uikit/zonaJuegos/food-list/food-list.component';
 export const appRoutes: Routes = [
     {
         path: '',
         component: AppLayout,
         children: [
             { path: '', component: Dashboard },
+            { path: 'all-categories', component: AllCategoriesComponent },
+             { path: 'food_list/:category', component: FoodListComponent }, // ¡Aquí va!
             { path: 'uikit', loadChildren: () => import('./app/pages/uikit/uikit.routes') },
             { path: 'documentation', component: Documentation },
             { path: 'pages', loadChildren: () => import('./app/pages/pages.routes') }
@@ -19,5 +22,5 @@ export const appRoutes: Routes = [
     { path: 'landing', component: Landing },
     { path: 'notfound', component: Notfound },
     { path: 'auth', loadChildren: () => import('./app/pages/auth/auth.routes') },
-    { path: '**', redirectTo: '/notfound' }
+    { path: '**', redirectTo: '/notfound' } // El wildcard debe ir al final
 ];

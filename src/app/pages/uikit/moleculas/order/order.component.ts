@@ -14,7 +14,7 @@ export class OrderComponent {
   @Input() imageUrl: string = '';
   @Input() title: string = '';
   @Input() itemCount: number = 0;
-  @Input() distance: number = 0;
-  @Input() price: number = 0;
+  @Input() distance: string = '';
+  @Input() price: string = '';
 
 }

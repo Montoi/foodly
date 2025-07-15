@@ -4,7 +4,7 @@ import { HeaderCompactComponentComponent } from "../../moleculas/header-compact-
 
 @Component({
   selector: 'app-carlos-game-zone',
-  imports: [ChatPreviewComponent, HeaderCompactComponentComponent],
+  imports: [ChatPreviewComponent],
   templateUrl: './carlos-game-zone.component.html',
   styleUrl: './carlos-game-zone.component.scss'
 })

@@ -127,3 +127,4 @@ export class HildeGameZoneComponent implements OnInit {
         console.log('categorias', this.categories)
     }
 }
+ 
