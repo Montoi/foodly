@@ -15,8 +15,8 @@ export class AllCategoriesComponent {
 constructor(private router: Router) { } 
   
  categories = [
-    { iconUrl: 'https://www.svgrepo.com/show/434100/hamburger.svg', label: 'Hamburguesas' },
-    { iconUrl: 'https://www.svgrepo.com/show/398088/pizza.svg', label: 'Pizzas' },
+    { iconUrl: 'https://www.svgrepo.com/show/434100/hamburger.svg', label: 'Hamburguesa' },
+    { iconUrl: 'https://www.svgrepo.com/show/398088/pizza.svg', label: 'Pizza' },
     { iconUrl: 'https://www.svgrepo.com/show/6178/noodles.svg', label: 'Noodles' },
     { iconUrl: 'https://www.svgrepo.com/show/397426/meat-on-bone.svg', label: 'Carnes' },
     { iconUrl: 'https://www.svgrepo.com/show/356688/tomato.svg', label: 'Vegetales' },
