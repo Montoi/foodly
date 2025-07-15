@@ -1,8 +1,14 @@
 <!-- src/app/pages/food-list/food-list.component.html -->
-<div class="p-4">
+<div class="p-4 flex flex-row items-center">
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mr-2 text-gray-700" (click)="backToHomePage()">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        
+    </svg>
+    
   <h2 class="text-2xl font-bold mb-6 text-gray-800">
-    {{ selectedCategory ? ('Alimentos de ' + selectedCategory) : 'Todos los Alimentos' }}
+    {{ selectedCategory ? (' ' + selectedCategory) : 'Todos los Alimentos' }}
   </h2>
+  </div>
 
   <div *ngIf="foods.length === 0" class="text-center text-gray-600 py-8">
     <p class="text-lg">No se encontraron alimentos para esta categoría.</p>
@@ -20,4 +26,3 @@
                [itemCount]="1"> <!-- itemCount podría ser siempre 1 para un producto individual, o podrías añadirlo al FoodItem si es variable -->
     </app-order>
   </div>
-</div>

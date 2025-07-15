@@ -10,12 +10,13 @@
     bg-cover bg-center
     shadow-lg
     overflow-hidden
-    mx- sm:mx-4 md:mx-6 lg:mx-8 xl:mx-12
-  "
-  [ngStyle]="{
+    sm:mx-4 md:mx-6 lg:mx-8 xl:mx-2
+    md:-ml-[10px]  <!-- Agregado: mueve el div 10px a la izquierda en >=852px -->
+    "
+    [ngStyle]="{
     'background-image': 'url(' + backgroundUrl + ')'
-  }"
->
+    }"
+  >
   <!-- Texto -->
   <div class="
     flex-1
